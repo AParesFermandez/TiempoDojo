@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoDojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1> DojoWeather </h1> 
+            <div class="nav-links">
+                <div onclick="mostrarMensaje(this)">Burbank</div>
+                <div onclick="mostrarMensaje(this)">Chicago</div>
+                <div onclick="mostrarMensaje(this)">Dollas</div> 
+            </div>
+        </div>
+    </div>
+    <main>
+    <div class="container">
+        <div class="topcontainer">
+            <h2>San Jose</h2>
+            <div class="tempselect">
+                <form id="temperatura-form">
+                    <p>Show Temperature in</p>
+                    <select onchange="return cambiarTemperaturas(this);" id="temperatura-seleccionada">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="dias">
+            <div class="dia">
+                <h2>Hoy</h2>
+                <img src="assets/some_rain.png" alt="rainday">
+                <p>some rain</p>
+                <div class="temperaturas">
+                    <div class="max">24</div><span class="rojito">°</span>
+                    <div class="min">18</div><span class="azulito">°</span>
+                </div>
+            </div>
+            <div class="dia">
+                <h2>Mañana</h2>
+                <img src="assets/some_sun.png" alt="sunday">
+                <p>some sun</p>
+                <div class="temperaturas">
+                    <div class="max">27</div><span class="rojito">°</span>
+                    <div class="min">19</div><span class="azulito">°</span>
+                </div>
+            </div>
+            <div class="dia">
+                <h2>Viernes</h2>
+                <img src="assets/some_clouds.png" alt="cloudsday">
+                <p>some clouds</p>
+                <div class="temperaturas">
+                    <div class="max">21</div><span class="rojito">°</span>
+                    <div class="min">16</div><span class="azulito">°</span>
+                </div>
+            </div>
+            <div class="dia">
+                <h2>Sabado</h2>
+                <img src="assets/some_sun.png" alt="sunday">
+                <p>some sun</p>
+                <div class="temperaturas">
+                    <div class="max">26</div><span class="rojito">°</span>
+                    <div class="min">21</div><span class="azulito">°</span>
+                </div>
+            </div>
+        </div>
+        <div class="galletas">
+            <img src="assets/cookie.png" alt="galletitas">
+            <div class="parrafocookie">
+                <h3 class="cookietime">Stop! Cookie time</h3>
+                    <p>we use cookies (sadly not the edible ones) to personalize content and ads, to provide social
+                        media features and to analyse out traffic. <a href="#">Read more</a></p>
+            </div>
+            <button class="cookiebutton" type="button">I Accept</button>
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
